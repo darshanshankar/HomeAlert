@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04E4CF39CEB91FEB20DD10B9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F105EAFA561AE06DCD59AB /* libPods.a */; };
 		F9AA05D71A3A5F26006F9CDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AA05D61A3A5F26006F9CDC /* main.m */; };
 		F9AA05DA1A3A5F26006F9CDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AA05D91A3A5F26006F9CDC /* AppDelegate.m */; };
 		F9AA05DD1A3A5F26006F9CDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AA05DC1A3A5F26006F9CDC /* ViewController.m */; };
-		F9AA05E01A3A5F26006F9CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9AA05DE1A3A5F26006F9CDC /* Main.storyboard */; };
 		F9AA05E21A3A5F26006F9CDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9AA05E11A3A5F26006F9CDC /* Images.xcassets */; };
-		F9AA05E51A3A5F26006F9CDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9AA05E31A3A5F26006F9CDC /* LaunchScreen.xib */; };
 		F9AA05F11A3A5F26006F9CDC /* HomeAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AA05F01A3A5F26006F9CDC /* HomeAlertTests.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		726B486CF3CD67FEC84718C9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C8DEA798622060180271EDFA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E7F105EAFA561AE06DCD59AB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9AA05D11A3A5F26006F9CDC /* HomeAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9AA05D51A3A5F26006F9CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9AA05D61A3A5F26006F9CDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,9 +36,7 @@
 		F9AA05D91A3A5F26006F9CDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F9AA05DB1A3A5F26006F9CDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F9AA05DC1A3A5F26006F9CDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F9AA05DF1A3A5F26006F9CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9AA05E11A3A5F26006F9CDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F9AA05E41A3A5F26006F9CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F9AA05EA1A3A5F26006F9CDC /* HomeAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9AA05EF1A3A5F26006F9CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9AA05F01A3A5F26006F9CDC /* HomeAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeAlertTests.m; sourceTree = "<group>"; };
@@ -47,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E4CF39CEB91FEB20DD10B9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		282216B7F43B107FE34FC9F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7F105EAFA561AE06DCD59AB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54C44B1A849441DEBD97CD4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8DEA798622060180271EDFA /* Pods.debug.xcconfig */,
+				726B486CF3CD67FEC84718C9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F9AA05C81A3A5F26006F9CDC = {
 			isa = PBXGroup;
 			children = (
 				F9AA05D31A3A5F26006F9CDC /* HomeAlert */,
 				F9AA05ED1A3A5F26006F9CDC /* HomeAlertTests */,
 				F9AA05D21A3A5F26006F9CDC /* Products */,
+				54C44B1A849441DEBD97CD4F /* Pods */,
+				282216B7F43B107FE34FC9F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,9 +105,7 @@
 				F9AA05D91A3A5F26006F9CDC /* AppDelegate.m */,
 				F9AA05DB1A3A5F26006F9CDC /* ViewController.h */,
 				F9AA05DC1A3A5F26006F9CDC /* ViewController.m */,
-				F9AA05DE1A3A5F26006F9CDC /* Main.storyboard */,
 				F9AA05E11A3A5F26006F9CDC /* Images.xcassets */,
-				F9AA05E31A3A5F26006F9CDC /* LaunchScreen.xib */,
 				F9AA05D41A3A5F26006F9CDC /* Supporting Files */,
 			);
 			path = HomeAlert;
@@ -126,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9AA05F41A3A5F26006F9CDC /* Build configuration list for PBXNativeTarget "HomeAlert" */;
 			buildPhases = (
+				2455B37BCC65F786466D01CD /* Check Pods Manifest.lock */,
 				F9AA05CD1A3A5F26006F9CDC /* Sources */,
 				F9AA05CE1A3A5F26006F9CDC /* Frameworks */,
 				F9AA05CF1A3A5F26006F9CDC /* Resources */,
+				7DDFC5732FAE87943FCB3D6A /* Copy Pods Resources */,
+				F9AA05FA1A3A87AC006F9CDC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -168,6 +189,7 @@
 				TargetAttributes = {
 					F9AA05D01A3A5F26006F9CDC = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 2B3L6C7XL3;
 					};
 					F9AA05E91A3A5F26006F9CDC = {
 						CreatedOnToolsVersion = 6.1;
@@ -199,8 +221,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9AA05E01A3A5F26006F9CDC /* Main.storyboard in Resources */,
-				F9AA05E51A3A5F26006F9CDC /* LaunchScreen.xib in Resources */,
 				F9AA05E21A3A5F26006F9CDC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +233,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2455B37BCC65F786466D01CD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DDFC5732FAE87943FCB3D6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9AA05FA1A3A87AC006F9CDC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9AA05CD1A3A5F26006F9CDC /* Sources */ = {
@@ -242,25 +308,6 @@
 			targetProxy = F9AA05EB1A3A5F26006F9CDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F9AA05DE1A3A5F26006F9CDC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9AA05DF1A3A5F26006F9CDC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F9AA05E31A3A5F26006F9CDC /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9AA05E41A3A5F26006F9CDC /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F9AA05F21A3A5F26006F9CDC /* Debug */ = {
@@ -341,21 +388,31 @@
 		};
 		F9AA05F51A3A5F26006F9CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DEA798622060180271EDFA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HomeAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F9AA05F61A3A5F26006F9CDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726B486CF3CD67FEC84718C9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HomeAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +469,7 @@
 				F9AA05F61A3A5F26006F9CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9AA05F71A3A5F26006F9CDC /* Build configuration list for PBXNativeTarget "HomeAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +478,7 @@
 				F9AA05F91A3A5F26006F9CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
